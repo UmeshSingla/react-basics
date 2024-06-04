@@ -1,0 +1,34 @@
+{
+  "name": "react-basics",
+  "version": "1.0.0",
+  "description": "Practice project for Namaste React course.",
+  "scripts": {
+    "start" : " parcel index.html",
+    "build" : " parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UmeshSingla/react-basics.git"
+  },
+  "keywords": [
+    "react",
+    "react-js",
+    "namaste-react"
+  ],
+  "author": "Umesh Singla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UmeshSingla/react-basics/issues"
+  },
+  "homepage": "https://github.com/UmeshSingla/react-basics#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": ["last 5 versions"]
+}
