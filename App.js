@@ -3,27 +3,32 @@ import ReactDOM from "react-dom/client";
 
 // JSX is transpiled before it reaches JS - Parcel - Babel
 
+const Heading2 = () => <h2 className="heading-l2">This is a heading level 2 using JSX Functional Component</h2>;
+const Heading3 = () => <h3 className="heading-l3">This is a heading level 3 using JSX Functional Component</h3>
+const ContainerDiv = () => (
+    <div className="title">
+        <Heading2 />
+        <Heading3 />
+    </div>
+);
+
+const rootOld = ReactDOM.createRoot( document.getElementById("container__root"));
+
+rootOld.render( <ContainerDiv />);
+
+const Logo = () => <img className="header__logo" src="https://pd.w.org/2024/04/3466141ebf053de0.18000183-768x778.jpeg" alt ="WordPress Logo" />;
+const SearchInput = () => <input type="text" name="search" placeholder="Search.." />;
+const UserIcon = () => <img className="header__user-icon" src="https://cdn0.iconfinder.com/data/icons/communication-line-10/24/account_profile_user_contact_person_avatar_placeholder-512.png" alt ="User Icon" />;
+
 // JSX => React.CreateElement => React Element - JS Object => HTML Element( React Render ).
-const heading = <h1 className="heading">Hello World, this is React using JSX.</h1>;
-const headingMultipleLine = ( <h1 className="heading">
-    Hello World, this is React using JSX.
-</h1> );
+const Header = () => (
+    <div className="header">
+        <Logo />
+        <SearchInput />
+        <UserIcon />
+    </div>
+);
 
-const elem = <span>This is a span tag content.</span>;
-const Title = () => {
-    return <h1 id="heading">This is the heading coming from Title component. {elem}</h1>;
-}
+const root = ReactDOM.createRoot(document.getElementById("container__page"));
 
-const num = 440;
-//Functional Component.
-const HeadingComponent = () => {
-    return (
-        <div className="container">
-            <Title />
-            <h2 className="heading">Hello World {num}, this is Heading level 2 using functional component - HeadingComponent.</h2>
-        </div>
-    );
-}
-const root = ReactDOM.createRoot(document.getElementById("container__root"));
-
-root.render( <HeadingComponent />);
+root.render( <Header />);
