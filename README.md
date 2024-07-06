@@ -18,3 +18,23 @@ Implementation of projects and concepts from Namaste React course by Akshay Sain
 - Error Handling
 - Enables HTTPs
 - Tree Shaking - 
+
+# Namaste Food App
+
+- Components: AppLayout
+*  Header
+*      Logo
+*      Search Bar
+*      Cart
+*  Body
+*      RestaurantContainer
+*          Card
+  *          Image
+*            Name, Rating
+*            Cuisines
+*            Delivery Time
+*
+*  Footer
+*      Copyright
+*      Links
+*      Contact

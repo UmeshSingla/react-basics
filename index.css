@@ -52,6 +52,11 @@ Body
     padding: 10px;
 }
 
+.filter-btn {
+    margin: 10px 0;
+}
+
+.shimmer-container,
 .app__res-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +65,7 @@ Body
     margin-top: 2rem;
 }
 
+.shimmer-card,
 .res-card {
     flex-basis: 200px;
     overflow: hidden;
@@ -70,4 +76,10 @@ Body
     border-radius: 5px;
     object-fit: cover;
     max-width: 100%;
+}
+
+.shimmer-card {
+    background: #f0f0f0;
+    height: 300px;
+    width: 200px;
 }
