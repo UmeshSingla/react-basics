@@ -66,7 +66,8 @@ Body
 }
 
 .shimmer-card,
-.res-card {
+.res-card
+.user-card {
     flex-basis: 200px;
     overflow: hidden;
     width: 100%;
@@ -78,8 +79,21 @@ Body
     max-width: 100%;
 }
 
-.shimmer-card {
+.shimmer-card,
+.user-card {
     background: #f0f0f0;
     height: 300px;
     width: 200px;
+    padding: 20px;
+}
+
+.user-card-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-card img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
 }
