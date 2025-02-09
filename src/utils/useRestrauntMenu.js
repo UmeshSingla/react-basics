@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {MENU_API} from "./constants";
+import {MENU_API_LATEST} from "./constants";
 const useRestaurantMenu = (resId) => {
 
     const [resMenuInfo, setResMenuInfo] = useState(null);
@@ -11,9 +11,9 @@ const useRestaurantMenu = (resId) => {
 
     const fetchMenu = async() => {
         const data = await fetch(
-            'https://proxy.cors.sh/' + MENU_API + resId,
+            'https://proxy.cors.sh/' + MENU_API_LATEST + resId,
             {
-                headers: {'x-cors-api-key': 'temp_b219aed3fae63b170ca642d51dfd3be6'}
+                headers: {'x-cors-api-key': 'temp_d89776b2c7851d5c1bd83dbb3f613aa7'}
             }
         );
 

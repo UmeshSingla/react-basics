@@ -20,11 +20,9 @@ class userClass extends React.Component {
 
     render() {
         return (
-            console.log(this.state.users),
             <div className="user-card-wrapper">
                 {
                     this.state.users.map(({login, avatar_url, html_url}) => {
-                        console.log(login);
                         return (
                             <div className="user-card">
                                 <h2>{login}</h2>
